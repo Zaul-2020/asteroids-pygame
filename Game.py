@@ -24,6 +24,8 @@ def main():
     screen.fill('light blue')
     screen.blit(player.image, player.rect)
 
+    player.move()
+
     for event in pygame.event.get():
 
       if event.type == pygame.QUIT:
