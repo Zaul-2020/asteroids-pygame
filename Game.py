@@ -1,4 +1,5 @@
 import pygame
+
 import Assets.utils.Player
 
 pygame.init()
@@ -21,10 +22,10 @@ def main():
   while running:
     clock.tick(60)
 
+    player.move()
+
     screen.fill('light blue')
     screen.blit(player.image, player.rect)
-
-    player.move()
 
     for event in pygame.event.get():
 
